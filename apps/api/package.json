@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@fastify/cors": "10.0.2",
+    "@prisma/client": "6.3.0",
     "@saas/auth": "workspace:*",
     "fastify": "5.2.1",
     "fastify-type-provider-zod": "4.0.2",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@saas/tsconfig": "workspace:*",
     "@types/node": "22.10.1",
+    "prisma": "6.3.0",
     "tsx": "4.19.2"
   }
 }
