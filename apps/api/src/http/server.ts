@@ -17,6 +17,7 @@ import { createAccount } from './routes/auth/create-account'
 import { getProfile } from './routes/auth/get-profile'
 import { requestPasswordRecovery } from './routes/auth/request-password-recovery'
 import { resetPassword } from './routes/auth/reset-password'
+import { createOrganization } from './routes/org/create-organization'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -61,6 +62,8 @@ app.register(authenticateWithGithub)
 app.register(getProfile)
 app.register(requestPasswordRecovery)
 app.register(resetPassword)
+
+app.register(createOrganization)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log('HTTP server running!')
