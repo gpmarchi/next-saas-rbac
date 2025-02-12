@@ -1,4 +1,4 @@
-import { auth } from '@/http/middleware/auth'
+import { auth } from '@/http/middlewares/auth'
 import { roleSchema } from '@saas/auth'
 import type { FastifyInstance } from 'fastify'
 import type { ZodTypeProvider } from 'fastify-type-provider-zod'

@@ -3,7 +3,7 @@ import type { FastifyInstance } from 'fastify'
 import type { ZodTypeProvider } from 'fastify-type-provider-zod'
 import { z } from 'zod'
 
-import { auth } from '@/http/middleware/auth'
+import { auth } from '@/http/middlewares/auth'
 import { prisma } from '@/lib/prisma'
 
 export async function getOrganizations(app: FastifyInstance) {
