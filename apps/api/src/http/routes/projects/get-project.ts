@@ -16,12 +16,12 @@ export async function getProject(app: FastifyInstance) {
       '/organizations/:orgSlug/projects/:projectSlug',
       {
         schema: {
-          tags: ['Projects'],
+          tags: ['projects'],
           summary: 'Get project details',
           security: [{ bearerAuth: [] }],
           params: z.object({
             orgSlug: z.string(),
-            projectSlug: z.string().uuid(),
+            projectSlug: z.string(),
           }),
           response: {
             200: z.object({
