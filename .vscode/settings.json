@@ -1,5 +1,5 @@
 {
-  "[typescript]": {
+  "[typescript][typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome",
     "editor.formatOnSave": true
   },
