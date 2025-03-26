@@ -1,4 +1,4 @@
-import { signInWithGithub } from '@/http/sign-id-with-github'
+import { signInWithGithub } from '@/http/sign-in-with-github'
 import { cookies } from 'next/headers'
 import { type NextRequest, NextResponse } from 'next/server'
 
