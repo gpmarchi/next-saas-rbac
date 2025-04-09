@@ -148,6 +148,9 @@ importers:
       '@types/react-dom':
         specifier: ^19
         version: 19.0.4(@types/react@19.0.10)
+      dotenv-cli:
+        specifier: 8.0.0
+        version: 8.0.0
       postcss:
         specifier: ^8
         version: 8.5.3
